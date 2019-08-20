@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deck Shuffle</title>
+</head>
+<body>
+    <h1>Tutorial of Use</h1>
+    <p>To use this software, you need open your browser console (Chrome is F12) and enter the commands in the command line.</p>
+    <p>You can make a new Deck using the proper command to this.</p>
+    <h3>List of commands</h3>
+    <ol>
+        <li>var <b>deck</b> = new Deck() - <i>Makes a new Deck to the var <b>deck</b></i></li>
+        <li><b>deck</b>.buildDeck() - <i>Populates the Deck with Cards (Aces to K and their respective suits)</i></li>
+        <li><b>deck</b>.shuffleCards() - <i>Shuffle the Deck Cards Randomly</i></li>
+        <li><b>deck</b>.getNonThrown() - <i>Returns the number of non-throwed cards</i></li>
+        <li><b>deck</b>.getBottom() - <i>Returns the bottom card value and suit</i></li>
+        <li><b>deck</b>.getTop() - <i>Returns the top card value and suit</i></li>
+        <li><b>deck</b>.deal() - <i>Delivers 3 cards and shows in console their respective value and suit</i></li>
+        <li><b>deck</b>.isThrown(0-51) - <i>Check if the specified card was Throwed</i></li>
+        <li><b>deck</b>.getSuit(0-51) - <i>Returns the specified card suit</i></li>
+        <li><b>deck</b>.getValue(0-51) - <i>Returns the specified card value</i></li>
+        <li><b>deck</b>.printDeck() - <i>Prints the whole deck in console</i></li>
+        <li><b>deck</b>.printCard(0-51) - <i>Prints the specified card in console</i></li>
+    </ol>
+    <hr>
+    <p>Gitlab Repo Link: <a href="https://gitlab.com/wpitombeira/DeckShuffle.git">https://gitlab.com/wpitombeira/DeckShuffle.git</a></p>
+    <script src="./main.js"></script>
+</body>
+</html>
