@@ -60,22 +60,27 @@ class Deck {
         let length = this.deck.length
         let i = 1
         do{
-            var last = this.deck.length-i
+            var last = length-i
             i++
         } while(this.deck[last].Thrown == true)
+        return last;
+    }
+
+    dealOne(){
+        let last = this.getLast()
         this.deck[last].Thrown = true
         return console.log("You Got: " + this.deck[last].Value + " Of " + this.deck[last].Suit)
     }
 
     deal(){
-        this.getLast();
-        this.getLast();
-        this.getLast();
+        this.dealOne();
+        this.dealOne();
+        this.dealOne();
     }
 
     getTop(){
-        return console.log("The Top Card Value is " + this.deck[this.deck.length-1].Value + " Of " + this.deck[this.deck.length-1].Suit)
-        // implementar função que verifica se a carta do topo já foi jogada
+        let top = this.getLast()
+        return console.log("The Top Card Value is " + this.deck[top].Value + " Of " + this.deck[top].Suit)
     }
 
     getBottom(){
