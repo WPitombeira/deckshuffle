@@ -75,6 +75,7 @@ class Deck {
 
     getTop(){
         return console.log("The Top Card Value is " + this.deck[this.deck.length-1].Value + " Of " + this.deck[this.deck.length-1].Suit)
+        // implementar função que verifica se a carta do topo já foi jogada
     }
 
     getBottom(){
